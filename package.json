@@ -1,0 +1,14 @@
+{
+  "name": "bdd-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/api.js",
+  "scripts": {
+    "test": "cucumberjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cucumber": "^1.2.2"
+  }
+}
