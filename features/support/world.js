@@ -1,6 +1,8 @@
+var fs = require('fs');
+
 function World() {
-  this.visit = function (url, callback) {
-    console.log('url');
+  this.getFileContent = function (location) {
+    return fs.readFileSync(location, 'utf-8');
   };
 }
 

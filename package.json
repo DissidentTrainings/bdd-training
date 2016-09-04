@@ -6,6 +6,7 @@
   "scripts": {
     "test": "cucumberjs"
   },
+  "readme": "README.md",
   "author": "",
   "license": "ISC",
   "dependencies": {

@@ -22,11 +22,25 @@ var myIndexStepDefinitionWrapper = function () {
     assert.equal(typeof myModule, arg1);
     callback(null);
   });
-
-
+  
   this.Then(/^the version equals to the package version$/, function (callback) {
     assert.equal(myModule.version, myPackage.version);
     callback(null);
   });
+
+  this.Then(/^it should contain a reference to the MIT License$/, function (callback) {
+    // Write code here that turns the phrase above into concrete actions
+    var fileContent = this.getFileContent('./'+ myPackage.readme);
+    assert.match(fileContent, /MIT/);
+    callback(null);
+  });
+
+  this.When(/^I access the Readme$/, function (callback) {
+    // Write code here that turns the phrase above into concrete actions
+    var readMeFile = myPackage.readme;
+    assert.ok(myPackage.readme);
+    callback(null);
+  });
+
 }
 module.exports = myIndexStepDefinitionWrapper;
