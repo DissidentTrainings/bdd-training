@@ -2,10 +2,12 @@
 
 The BDD Template is a introduction to basic methods of BDD that you might need.
 
-* Using asserts with cucumber
-* Tags
+Examples for
+
+* asserts
+* tags
 * hooks
-* 
+* example outlines
 
 
 ## License

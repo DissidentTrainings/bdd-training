@@ -22,7 +22,7 @@ var myIndexStepDefinitionWrapper = function () {
     assert.equal(typeof myModule, arg1);
     callback(null);
   });
-  
+
   this.Then(/^the version equals to the package version$/, function (callback) {
     assert.equal(myModule.version, myPackage.version);
     callback(null);
@@ -41,6 +41,7 @@ var myIndexStepDefinitionWrapper = function () {
     assert.ok(myPackage.readme);
     callback(null);
   });
+
 
 }
 module.exports = myIndexStepDefinitionWrapper;
