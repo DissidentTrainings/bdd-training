@@ -4,15 +4,19 @@
   "description": "",
   "main": "lib/api.js",
   "scripts": {
-    "test": "cucumberjs"
+    "test": "cucumberjs",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "readme": "README.md",
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cucumber": "^1.2.2"
+    "cucumber": "^1.2.2",
+    "snyk": "^1.317.0"
   },
   "devDependencies": {
     "markdown": "^0.5.0"
-  }
+  },
+  "snyk": true
 }
